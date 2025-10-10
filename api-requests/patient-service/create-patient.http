@@ -1,13 +1,14 @@
 ### POST request to create a new patient entry
-POST http://localhost:4000/patients
+POST http://<localstack-cloud-loadbalancer-endpoint>:4004/api/patients
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-  "name": "Kafka bhai",
-  "email": "kafkatest@example.com",
-  "address": "6 Prentes St",
-  "dateOfBirth": "1995-03-09",
-  "registeredDate": "2024-11-28"
+  "name": "Deployment Test",
+  "email": "deploytest@example.com",
+  "address": "12 Akshar Rd",
+  "dateOfBirth": "1995-01-09",
+  "registeredDate": "2025-10-01"
 }
 
 ###

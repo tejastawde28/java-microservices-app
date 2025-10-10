@@ -1,5 +1,5 @@
 ### Login request to retrieve a token
-POST http://localhost:4004/auth/login
+POST http://<localstack-cloud-loadbalancer-endpoint>:4004/auth/login
 Content-Type: application/json
 
 {
