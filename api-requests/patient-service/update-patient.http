@@ -1,5 +1,6 @@
 ### PUT request to update an existing patient entry
 PUT http://<localstack-cloud-loadbalancer-endpoint>:4004/api/patients/<patient-id>
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {

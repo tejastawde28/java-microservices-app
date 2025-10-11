@@ -2,7 +2,7 @@
 
 set -e # stops the script if any command fails
 
-aws --endpoint-url:http://localhost:4566 cloudformation delete-stack \
+aws --endpoint-url=http://localhost:4566 cloudformation delete-stack \
     --stack-name patient-management
 
 aws --endpoint-url=http://localhost:4566 cloudformation deploy \
